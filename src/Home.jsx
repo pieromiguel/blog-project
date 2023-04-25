@@ -1,73 +1,14 @@
-import { useState } from 'react'
 import './Home.css'
+import { BlogCards } from './components/blogCards/BlogCards.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
-      </div>
-      <div className="text-white">
-        BODY
+      <div className="flex justify-center ">
+
+        <BlogCards />
+
       </div>
     </>
   )
