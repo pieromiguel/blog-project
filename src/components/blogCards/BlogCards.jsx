@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export const BlogCards = () => {
+export const BlogCards = ({ category }) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -8,7 +8,7 @@ export const BlogCards = () => {
     }, []);
 
     const getBlogs = async () => {
-        const url = 'https://api.giphy.com/v1/gifs/search?q=dragon ball&limit=4&api_key=LufMignL3C3W6qlkjYNauwiLTuUgP3KG';
+        const url = `https://api.giphy.com/v1/gifs/search?q=${category}&limit=4&api_key=LufMignL3C3W6qlkjYNauwiLTuUgP3KG`;
         const resp = await fetch(url);
         const { data: blogData } = await resp.json();
 

@@ -8,8 +8,8 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="flex justify-center ">
-        <BlogCards />
+      <div className="main-div-pages">
+        <BlogCards category={'Dragon ball'} />
       </div>
       <Footer />
     </>
